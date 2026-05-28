@@ -1,6 +1,9 @@
 # Configurações de IA e Agentes locais
 .agent/
 
+# Documentação local (não subir para o GitHub)
+README.md
+
 # Configurações do VS Code
 .vscode/
 
