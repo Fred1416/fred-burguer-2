@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fred Burguer 2 - Hamburgueria com 26 tipos de hambúrgueres frescos. Peça agora pelo WhatsApp e receba em casa!">
+    <meta property="og:title" content="Fred Burguer 2 - O Melhor Hambúrguer da Cidade">
+    <meta property="og:description" content="Hambúrgueres feitos com ingredientes frescos e qualidade. Peça agora e receba em casa!">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#1095f3">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="style.css">
+    <title>Fred Burguer 2 - Hamburgueria | Pedidos WhatsApp</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">🍔Fred Burguer 2</a>
+        <nav>
+            <a href="#home"> <strong>Inicio</strong></a>
+            <a href="#cardapio"> <strong>Cardápio</strong></a>
+            <a href="#sobre"> <strong>Sobre</strong></a>
+            <a href="#contato"> <strong>Contato</strong></a>
+        </nav>
+        <a href="#cart-section" class="cart-link">
+            <span class="cart-icon-wrapper">
+                🛒
+                <span id="cart-badge" class="cart-badge" style="display: none;"></span>
+            </span>
+            Carrinho
+        </a>
+        <a href="#cardapio" class="btn">Peça Agora</a>
+    </header>
+
+    <section id="home" class="hero-wrapper">
+        <article class="hero">
+            <div>
+                <h1>O Melhor Hamburguer da Cidade</h1>
+                <p>Ingredientes frescos e qualidade no sabor</p>
+                <nav class="hero-buttons">
+                    <a href="#cardapio" class="btn">Ver Cardápio</a>
+                    <a href="https://wa.me/553135228989?text=Faça%20seu%20pedido."   class="btn btn-outline">📲 WhatsApp</a>
+                </nav>
+                <ul class="hero-stats">
+                    <li><strong>+300</strong>😁Clientes Satisfeitos</li>
+                    <li><strong>3,6</strong>⭐Nota no Google</li>
+                    <li><strong>+172</strong>👍Avaliações no Google</li>
+                </ul>
+            </div>
+                <img src="https://images.unsplash.com/photo-1601894087104-0c18bc34dbd6?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Hambúrguer suculento com ingredientes frescos - Fred Burguer 2">
+
+        </article>
+
+    </section>
+
+    <section id="cardapio" class="cardapio">
+        <h2>Nosso Cardápio</h2>
+        <p>Escolha seu favorito e faça o seu pedido pelo WhatsApp</p>
+
+        <ul class="menu-grid">
+            <!-- O Robô JavaScript vai injetar os hambúrgueres aqui! -->
+        </ul>
+    </section>
+
+    <section id="sobre" class="sobre">
+    
+        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ambiente acolhedor da hamburgueria Fred Burguer 2">
+        <article>
+            <h2>
+                Nossa Hamburgueria
+            </h2>
+            <p>
+                Bem-vindo à nossa hamburgueria! Aqui, criamos uma experiência única para você, com ingredientes de qualidade e receitas tradicionais. Nossa paixão por hambúrgueres reflete em cada recheio, cada pão e cada acompanhamento. Venha experimentar a verdadeira essência da hamburgueria!
+            </p>
+            <ul>
+                <li>🥩<strong>Carnes frescas e de qualidade</strong></li>
+                <li>🚀<strong>Entrega rápida e segura</strong></li>
+                <li>💳<strong>Pagamento flexível</strong></li>
+                <li>📱<strong>Pedidos via WhatsApp</strong></li>
+            </ul>
+        </article>
+
+    </section>
+
+    <section id="cta" class="cta">
+        <h2>Bateu a Fome?</h2>
+        <p>Faça seu pedido e receba em casa!</p>
+        <a href="https://wa.me/553135228989?text=Fa%C3%A7a%20seu%20pedido."   class=" btn btn-wa">📲Pedir pelo WhatsApp</a>
+
+    </section>
+
+    <footer id="contato" class="contato">
+        <section>
+
+        <h2>Fred Burguer 2</h2>
+        <p>O melhor hambúrguer da cidade</p>
+        <p>Email: contato@hamburgueria.com</p>
+
+        </section>
+
+        <section>
+            <h4>Horário de Funcionamento</h4>
+            <p>Terça a Domingo: 18h - 23h</p>
+           
+        </section>
+
+        <section>
+            <h4>Contato</h4>
+            <p>Telefone: (31) 99999-9999</p>
+            <p>Email: contato@hamburgueria.com</p>
+        </section>
+
+        <section>
+            <h4>Redes Sociais</h4>
+            <p>Instagram: @hamburgueria</p>
+            <p>Facebook: @hamburgueria</p>
+        </section>
+        
+        <p class="copy">© 2026 Fred Burguer 2. Todos os direitos reservados.</p>
+
+    </footer>
+
+    <!-- ===== SHOPPING CART DISPLAY ===== -->
+    <section id="cart-section" class="cart-section">
+        <div class="cart-container">
+            <div class="cart-header">
+                <h2>🛒 Seu Carrinho</h2>
+                <button id="cart-clear-btn" class="clear-cart-btn" onclick="cart.clearCart()">Limpar Carrinho</button>
+            </div>
+            <div id="cart-items" class="cart-items">
+                <p class="empty-cart">Seu carrinho está vazio</p>
+            </div>
+            <div id="cart-total" class="cart-total">
+                <strong>Total: R$ 0,00</strong>
+            </div>
+            <button id="checkout-btn" class="btn btn-checkout" disabled>Finalizar Pedido</button>
+        </div>
+    </section>
+
+    <!-- ===== PRODUCT SELECTION MODAL ===== -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2 class="modal-title">Produto</h2>
+            <p class="modal-description"></p>
+            <p class="modal-price">R$ 0,00</p>
+            
+            <div class="modal-quantity-section">
+                <label for="modal-quantity">Quantidade:</label>
+                <div class="quantity-controls">
+                    <button id="btn-minus" class="qty-btn">−</button> 
+                    <input type="number" id="modal-quantity" value="1" min="1" class="qty-input-modal">
+                    <button id="btn-plus" class="qty-btn">+</button> 
+                </div>
+            </div>
+
+            <div class="modal-buttons">
+                <button id="modal-add-btn" class="btn btn-primary">Adicionar ao Carrinho</button>
+                <button class="btn btn-secondary modal-close">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== CHECKOUT FORM MODAL ===== -->
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <h2>Informações de Entrega</h2>
+            
+            <form id="checkout-form">
+                <div class="form-group">
+                    <label for="checkout-name">Nome Completo *</label>
+                    <input type="text" id="checkout-name" name="name" required placeholder="Seu nome completo">
+                </div>
+
+                <div class="form-group">
+                    <label for="checkout-phone">Telefone/WhatsApp *</label>
+                    <input type="tel" id="checkout-phone" name="phone" required placeholder="(31) 99999-9999">
+                </div>
+
+                <div class="form-group">
+                    <label for="checkout-address">Endereço de Entrega *</label>
+                    <textarea id="checkout-address" name="address" rows="3" required placeholder="Rua, número, bairro, cidade"></textarea>
+                </div>
+
+                <div class="checkout-summary">
+                    <p><strong>Itens no carrinho:</strong> <span id="checkout-item-count">0</span></p>
+                    <p><strong>Total:</strong> <span id="checkout-total">R$ 0,00</span></p>
+                </div>
+
+                <div class="modal-buttons">
+                    <button type="button" id="checkout-submit-btn" class="btn btn-primary">Confirmar Pedido</button>
+                    <button type="button" class="btn btn-secondary modal-close">Cancelar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ===== CART BADGE (in header) ===== -->
+    <!-- Badge is now in header element -->
+
+    <!-- ===== SCRIPT REFERENCE ===== -->
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
